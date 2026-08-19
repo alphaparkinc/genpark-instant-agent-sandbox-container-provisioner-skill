@@ -1,0 +1,35 @@
+{
+  "name": "genpark-instant-agent-sandbox-container-provisioner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 60-second autonomous agent sandbox container provisioning & instant endpoint deployer.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "agent-sandbox",
+    "container-provisioner",
+    "instant-deploy",
+    "serverless-agent",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "agent_runtime_config": {
+      "type": "object"
+    },
+    "target_region": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "endpoint_url": {
+      "type": "string"
+    },
+    "provisioning_duration_seconds": {
+      "type": "integer"
+    },
+    "sandbox_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
